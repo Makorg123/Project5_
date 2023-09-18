@@ -103,6 +103,25 @@ with col4:
         st.write('\t%s: %.3f' % (key, value))
 
 
+with st.expander("See explanation"):
+   st.write("""
+:blue[Augmented Dickey Fuller Test of Stationarity] - Identifies the whether the stationary data is Stationary or Not.
+Null - Unit Root Present or Data is not Stationary.
+Alt  - No Unit Root or Data is Stationary.
+
+A unit root process is a data-generating process whose first difference is stationary. In other words, 
+a unit root process yt has the form.
+yt = yt-1 + stationary process.
+
+:red[Interpretation is baesd on p-value]
+p-value less than 0.05, Reject Null
+p-value greater than 0.05, Fail to Reject Null
+
+:blue[Kwiatkowaski-Phillips-Schmidt-Schmidt-Shin(KPSS)] test for stationaryity.
+null hypothesis that x is level or trend stationary.
+Alt hypothessis that x is not level or not trend stationary.""")
+
+
 tab4,tab5 = st.tabs(["ACF & PACF","Decomposition"])
 
 # Plotting ACF and PACF
@@ -119,6 +138,12 @@ with tab5:
    decomposition = seasonal_decompose(data, model='additive', period=365)
    fig = decomposition.plot()
    st.pyplot(fig)
+
+with st.expander("See explanation"):
+   st.write(""" :green[Autocorrelation Function (ACF)] and :orange[Partial Autocorrelation Function (PACF)] plots are graphical tools in time series 
+   analysis. :green[ACF] shows the correlation between a time series and its lagged values, while :orange[PACF] reveals the direct relationship while 
+   controlling for intermediate lags, helping identify patterns and optimal lag orders for time series modeling.
+   :blue[Decomposition] splits a time series into trend, seasonality, and residual components, helping to identify underlying patterns and fluctuations. """)
 
 st.divider()
 

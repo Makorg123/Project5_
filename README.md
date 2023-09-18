@@ -10,13 +10,12 @@
 </div>
 
 ## Overview
-This project is a comprehensive time series analysis of Chicago taxi trip data. I aim to understand and forecast the patterns in taxi trip demand 
+This project is a comprehensive time series analysis of Chicago taxi trip data. aim to understand and forecast the patterns in taxi trip demand 
 using various time series analysis techniques. I have used ARIMA, Prophet, and Plotly for visualization, along with statistical tests such as 
 ADFuller and KPSS for stationarity analysis.
 
 ## Data
-I have utilized a dataset containing historical Chicago taxi trip data. The dataset includes information such as trip date, time, pickup/drop-off 
-locations, and fare details. This data will be the basis for my time series analysis.
+I have utilized a dataset containing historical Chicago taxi trip data. The dataset includes information such as trip date and total trips. This data will be the basis for my time series analysis.
 
 ## ARIMA Modeling
 I have employed the Autoregressive Integrated Moving Average (ARIMA) model to capture the temporal patterns in the taxi trip data. The ARIMA model
@@ -41,7 +40,7 @@ me determine whether differencing is necessary to achieve stationarity.
 ## Deployment with Streamlit
 I have deployed the time series analysis using Streamlit, a Python library for creating web applications with minimal effort. The Streamlit app 
 allows users to interact with the analysis, explore the visualizations, and make predictions based on the models I've developed. You can access 
-the deployed application by following this link: Link to Streamlit App.
+the deployed application by following this link: [Streamlit](https://project5chicagotaxitripstimeseries-wwn89ktpevfmjexzrssvfq.streamlit.app/)
 
 ## Conclusion
 This project provides a comprehensive time series analysis of Chicago taxi trip data. I have applied ARIMA and Prophet models for forecasting, 
@@ -53,10 +52,6 @@ Feel free to explore the code, findings, and the Streamlit app in this repositor
 
 Thank you for visiting this project!
 
-Author: [Your Name]
-Contact: [Your Email]
-
-
-
-
+**Author:** Mohammed Anas Khan
+**Contact:** 132anaskhan@gmail.com
 
